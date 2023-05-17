@@ -7,7 +7,8 @@ https://colab.research.google.com/drive/1flepQHroSHUMo2Kd0aJ8cHjDdjvkzSxT?usp=sh
 ## Explanation
 In this project, I created the qtrain() function and was provided with the Python files for the maze representation and state storage. 
 
-Computer scientists design software to solve many different real world problems. The solutions that they come up with matter since they are the backbone of many useful software applications. To approach a problem as a computer scientist, one should solve the problem before coding it, creating psudocode as they go along to create the final program. Also, they should solve the most general cases and then narrow down the program to its specifics as they go along. Completing a project in these smaller stages along with testing it along the way helps avoid distraction and confusion. Computer scientists hold ethical responsibilities to the end user like making the application accessible in terms of visuals, text, and making sure the app is secure. They also hold ethical responsibilities to their organizations in the same regard with security. 
+The qtrain() function implements a deep-Q learning algorithm to have the agent learn to properly traverse the maze. The agent chooses actions in each state through exploration 10% of the time and exploitation for the other 90%. When choosing actions through exploitation, quality values of each action recorded through previous states determine the outcome. These Q values are based on a reward system which penalizes the agent for hitting walls or wandering to the same cell too many times. The algorithm also counts win rate and stops the learning once a 100% win rate is achieved. 
+
 
 ## Screenshots
 
